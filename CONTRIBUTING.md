@@ -10,9 +10,11 @@ Contributions in Chinese or English are welcome. Follow the target repository's 
 - 配置生成、规范 ID 解析 / Profile generation and canonical ID resolution: [imitate](https://github.com/FastTLS/imitate)
 - 固定数据与证据 / Fixed data and evidence: [fastls-fingerprints](https://github.com/FastTLS/fastls-fingerprints)
 - 采集器与观测 / Collectors and observations: [fastls-lab](https://github.com/FastTLS/fastls-lab)
-- C ABI、Python SDK / Language bindings: [fastls-ffi](https://github.com/FastTLS/fastls-ffi)
+- C ABI、Python/Node SDK / Language bindings: [fastls-ffi](https://github.com/FastTLS/fastls-ffi)
 - 服务接口 / Service interfaces: 对应的 Fetch、RPC 或 MITM 仓库 / the relevant Fetch, RPC, or MITM repository
 - 组织首页与公共模板 / Organization profile and shared templates: [.github](https://github.com/FastTLS/.github)
+
+普通使用者先阅读 [使用文档](https://fasttls.github.io/) 和 [排错](https://fasttls.github.io/help/)。安全敏感问题遵循 [SECURITY.md](SECURITY.md)。
 
 ## 报告问题 / Report a bug
 

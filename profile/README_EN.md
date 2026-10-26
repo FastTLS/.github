@@ -1,51 +1,27 @@
-<div align="center">
-
 # FastTLS
 
-**TLS fingerprinting and HTTP request tools for Go**
+**Configurable network clients for Go, Python and Node.js.**
 
-Generate profiles · Send requests · Observe protocol behavior
+[Documentation](https://fasttls.github.io/) · [中文](README.md)
 
-[Core library](https://github.com/FastTLS/fastls) · [Profile generator](https://github.com/FastTLS/imitate) · [中文](https://github.com/FastTLS/.github/blob/main/profile/README.md)
+## Choose a client
 
-</div>
+- [Fastls for Go](https://github.com/FastTLS/fastls): stable core v0.1.1; TLS/HTTP profiles, JA3/JA4R, complete Spec, sessions, streaming and proxies.
+- [Python SDK](https://github.com/FastTLS/fastls-ffi): `pip install --only-binary=:all: fastls==0.1.3`; synchronous and asyncio APIs with bundled native libraries.
+- [Node.js SDK](https://github.com/FastTLS/fastls-ffi/tree/main/node): `npm install @fastls/fastls@0.10.1-dev.0`; Promise APIs, TypeScript and ESM/CommonJS. This is a development version.
 
-FastTLS provides composable request libraries, profile generation, language bindings, and diagnostic tools for TLS ClientHello parameters, HTTP protocol settings, and header ordering. These projects support client compatibility testing, protocol research, and request debugging.
-
-## Start here
-
-- **Send requests from Go** → [fastls](https://github.com/FastTLS/fastls): custom JA3 / JA4R, complete `profile.Spec` configurations, header ordering, and HTTP / HTTPS / SOCKS5 proxies.
-- **Generate or export profiles** → [imitate](https://github.com/FastTLS/imitate): an independent generator for browser, library, and client profiles. Integrate through a Provider or export an offline Bundle.
-- **Integrate through Python or a C ABI** → [fastls-ffi](https://github.com/FastTLS/fastls-ffi): a shared library and Python SDK with synchronous, asynchronous, and streaming response interfaces. Currently in early development.
-- **Inspect what was actually sent** → [fastls-lab](https://github.com/FastTLS/fastls-lab): independent observation of selected TLS, HTTP/1, HTTP/2, and WS/WSS behaviors for diagnosis and verification.
+[Getting started](https://fasttls.github.io/guide/) · [Capabilities and limits](https://fasttls.github.io/concepts/support) · [Troubleshooting](https://fasttls.github.io/help/). Documentation currently uses Chinese as its primary language.
 
 ## Ecosystem
 
-### Profiles and evidence
+[imitate](https://github.com/FastTLS/imitate) generates profiles; [ftransport](https://github.com/FastTLS/ftransport) implements configurable H1/H2 transport using standard net/http types; [profile](https://github.com/FastTLS/fastls/tree/v2/profile) defines the shared schema.
 
-- [fastls/profile](https://github.com/FastTLS/fastls/tree/v2/profile): the shared profile specification for the request library and generators.
-- [fastls-fingerprints](https://github.com/FastTLS/fastls-fingerprints): evidence, coverage records, and fixed data exports. Executable generation rules are maintained in imitate.
+[Fetch](https://github.com/FastTLS/fastls-fetch), [RPC](https://github.com/FastTLS/fastls-rpc), [MITM](https://github.com/FastTLS/fastls-mitm), and [fastls-lab](https://github.com/FastTLS/fastls-lab) provide request services, authorized debugging and limited independent protocol observations. [fastls-fingerprints](https://github.com/FastTLS/fastls-fingerprints) has no formally released dataset. Historical fhttp/oohttp and protocol forks are not necessarily current core dependencies.
 
-### Services and integrations
+## Scope, licensing and responsibility
 
-- [fastls-fetch](https://github.com/FastTLS/fastls-fetch): an HTTP Fetch service.
-- [fastls-rpc](https://github.com/FastTLS/fastls-rpc): JSON-RPC and gRPC interfaces.
-- [fastls-mitm](https://github.com/FastTLS/fastls-mitm): a MITM proxy for testing and debugging.
+A profile name, User-Agent or successful request does not establish full equivalence with a real browser. Consult each tool for H3, WS, platform and runtime limits. Use only authorized systems and protect credentials and captured data. No anonymity or third-party acceptance is guaranteed.
 
-Consult each repository for available interfaces, build instructions, and dependency versions.
+Most FastTLS-owned core/SDK code uses Apache-2.0; third-party and historical repositories retain their actual terms. The upstream authorization gap for fhttp additions remains unresolved and must not be presented as blanket BSD/Apache permission. See the [licensing and disclaimer guide](https://fasttls.github.io/legal).
 
-### Protocol dependencies
-
-The organization hosts protocol repositories including [fhttp](https://github.com/FastTLS/fhttp), [utls](https://github.com/FastTLS/utls), [quic-go](https://github.com/FastTLS/quic-go), and [oohttp](https://github.com/FastTLS/oohttp). Check each repository for provenance, licensing, and usage. Hosting a fork does not imply that the core library currently depends on it.
-
-## Development status and scope
-
-Fastls v2 and imitate v2 are development candidates and have not been published as formal Go module releases. Before integrating, read the target branch's README, the [core development guide](https://github.com/FastTLS/fastls/blob/v2/DEVELOPMENT.md), and the [release prerequisites](https://github.com/FastTLS/fastls/blob/v2/RELEASE.md). Pin the version or commit you use.
-
-A browser name, version identity, or User-Agent does not establish full protocol equivalence with a real browser. Consult the Provider's `List`, the resolved `Match`, and supporting evidence. Complete Spec configurations currently support HTTP/1 and HTTP/2; see the [integration guide](https://github.com/FastTLS/fastls/blob/v2/imitate/README.md) for HTTP/3 and other capability boundaries.
-
-## Contribute
-
-Documentation improvements, minimal reproductions, protocol tests, and traceable fingerprint evidence are welcome. Open an Issue or Pull Request in the relevant project. Report organization profile and shared template issues in [this repository](https://github.com/FastTLS/.github/issues).
-
-Read the [contribution guide](https://github.com/FastTLS/.github/blob/main/CONTRIBUTING.md). Licensing and upstream notices are defined by each repository's own files.
+Report sanitized reproductions in the relevant repository. See [Contributing](https://github.com/FastTLS/.github/blob/main/CONTRIBUTING.md) and [Security](https://github.com/FastTLS/.github/blob/main/SECURITY.md).
