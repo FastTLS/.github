@@ -1,16 +1,16 @@
 # FastTLS
 
-**Configurable network clients for Go, Python and Node.js.**
+**Fine control over TLS fingerprints and HTTP request behavior in Go, Python and Node.js.**
 
-[Documentation](https://fasttls.github.io/) · [中文](README.md)
+[Documentation](https://fasttls.github.io/en/) · [中文](README.md)
 
 ## Choose a client
 
 - [Fastls for Go](https://github.com/FastTLS/fastls): stable core v0.1.1; TLS/HTTP profiles, JA3/JA4R, complete Spec, sessions, streaming and proxies.
-- [Python SDK](https://github.com/FastTLS/fastls-ffi): `pip install --only-binary=:all: fastls==0.1.3`; synchronous and asyncio APIs with bundled native libraries.
+- [Python SDK](https://github.com/FastTLS/fastls-ffi): `pip install --only-binary=:all: fastls==0.1.4`; synchronous and asyncio APIs with bundled native libraries.
 - [Node.js SDK](https://github.com/FastTLS/fastls-ffi/tree/main/node): `npm install @fastls/fastls@0.10.1-dev.0`; Promise APIs, TypeScript and ESM/CommonJS. This is a development version.
 
-[Getting started](https://fasttls.github.io/guide/) · [Capabilities and limits](https://fasttls.github.io/concepts/support) · [Troubleshooting](https://fasttls.github.io/help/). Documentation currently uses Chinese as its primary language.
+[Getting started](https://fasttls.github.io/en/guide/) · [Capabilities and limits](https://fasttls.github.io/en/concepts/support) · [Troubleshooting](https://fasttls.github.io/en/help/). Documentation is available in English and Simplified Chinese.
 
 ## Ecosystem
 
@@ -22,6 +22,6 @@
 
 A profile name, User-Agent or successful request does not establish full equivalence with a real browser. Consult each tool for H3, WS, platform and runtime limits. Use only authorized systems and protect credentials and captured data. No anonymity or third-party acceptance is guaranteed.
 
-Most FastTLS-owned core/SDK code uses Apache-2.0; third-party and historical repositories retain their actual terms. The upstream authorization gap for fhttp additions remains unresolved and must not be presented as blanket BSD/Apache permission. See the [licensing and disclaimer guide](https://fasttls.github.io/legal).
+Most FastTLS-owned core/SDK code uses Apache-2.0; third-party and historical repositories retain their actual terms. The upstream authorization gap for fhttp additions remains unresolved and must not be presented as blanket BSD/Apache permission. See the [licensing and disclaimer guide](https://fasttls.github.io/en/legal).
 
 Report sanitized reproductions in the relevant repository. See [Contributing](https://github.com/FastTLS/.github/blob/main/CONTRIBUTING.md) and [Security](https://github.com/FastTLS/.github/blob/main/SECURITY.md).

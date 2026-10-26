@@ -1,5 +1,7 @@
 # FastTLS 组织入口与公共模板
 
+[English documentation](https://fasttls.github.io/en/)
+
 普通使用者请访问 [统一文档](https://fasttls.github.io/)：选择 Go、Python 或 Node.js，查看安装、功能、限制、示例与排错。
 
 - [中文组织首页](profile/README.md) · [English profile](profile/README_EN.md)
