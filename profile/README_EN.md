@@ -8,7 +8,7 @@
 
 - [Fastls for Go](https://github.com/FastTLS/fastls): stable core v0.1.1; TLS/HTTP profiles, JA3/JA4R, complete Spec, sessions, streaming and proxies.
 - [Python SDK](https://github.com/FastTLS/fastls-ffi): `pip install --only-binary=:all: fastls==0.1.4`; synchronous and asyncio APIs with bundled native libraries.
-- [Node.js SDK](https://github.com/FastTLS/fastls-ffi/tree/main/node): `npm install @fastls/fastls@0.10.1-dev.0`; Promise APIs, TypeScript and ESM/CommonJS. This is a development version.
+- [Node.js SDK](https://github.com/FastTLS/fastls-ffi/tree/main/node): `npm install @fastls/fastls@0.10.1`; Promise APIs, TypeScript and ESM/CommonJS. This is a stable release.
 
 [Getting started](https://fasttls.github.io/en/guide/) · [Capabilities and limits](https://fasttls.github.io/en/concepts/support) · [Troubleshooting](https://fasttls.github.io/en/help/). Documentation is available in English and Simplified Chinese.
 

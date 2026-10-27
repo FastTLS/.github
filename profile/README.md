@@ -8,7 +8,7 @@
 
 - **Go**：[fastls](https://github.com/FastTLS/fastls)，稳定核心 v0.1.1。TLS/HTTP 参数、JA3/JA4R、完整 Spec、连接池、流式与代理。
 - **Python**：[fastls-ffi](https://github.com/FastTLS/fastls-ffi)，PyPI 安装 `fastls==0.1.4`。同步/asyncio，平台 wheel 内置动态库。
-- **Node.js**：[fastls-ffi/node](https://github.com/FastTLS/fastls-ffi/tree/main/node)，npm 安装 `@fastls/fastls@0.10.1-dev.0`。Promise、TypeScript、ESM/CommonJS；当前是开发版本。
+- **Node.js**：[fastls-ffi/node](https://github.com/FastTLS/fastls-ffi/tree/main/node)，npm 安装 `@fastls/fastls@0.10.1`。Promise、TypeScript、ESM/CommonJS；当前为正式稳定版本。
 
 [快速开始](https://fasttls.github.io/guide/) · [支持与限制](https://fasttls.github.io/concepts/support) · [安装排错](https://fasttls.github.io/help/)
 
